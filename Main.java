@@ -33,7 +33,7 @@ public class Main extends javax.swing.JFrame {
     private static void connection(){    
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mkim58","root","rk123123");           
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/yourURL","yourID","yourPASSWORD");           
             if(con!=null)
                 System.out.println("mysql is connected");
         } catch(ClassNotFoundException e){
